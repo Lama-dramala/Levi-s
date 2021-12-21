@@ -1,0 +1,573 @@
+html{
+    font-size: 10px;    
+}
+@font-face {
+    font-family: 'GLInterstateLight';
+    src: local('GLInterstateLight'),
+        url('my-fonts/GLInterstateLight.woff2') format('woff2'),
+        url('my-fonts/GLInterstateLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GLInterstateRegular';
+    src: local('GLInterstateRegular'),
+        url('my-fonts/GLInterstateRegular.woff2') format('woff2'),
+        url('my-fonts/GLInterstateRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Interstate';
+    src: local('Interstate Bold'), local('Interstate-Bold'),
+        url('my-fonts/Interstate-Bold.woff2') format('woff2'),
+        url('my-fonts/Interstate-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+    
+}
+a{
+    color: unset;
+    text-decoration: unset;
+}
+button{
+    background-color: unset;
+    border: unset;
+    cursor: pointer;    
+    padding: unset;
+    border: unset;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.pc-hidden{
+    display: none;
+}
+/* Хедер */
+    header{
+        display: flex;
+        background-color: #c31230;
+        color: #ffffff;
+        justify-content: center;
+        align-content: center;
+        padding: 2.8rem 0;
+        text-transform: uppercase;     
+    }
+    .main-logo{
+        margin-right: 9.1rem;
+        width: 19.5rem;
+        height: 3.8rem;
+    }
+    header nav{
+        display: flex;
+        align-content: center;
+    }
+    .nav-menu{
+        display: none;
+    }
+    header ul{
+        margin-right: 10.8rem;
+        display: flex;
+        align-content: center;    
+    }
+    header ul li{
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        font-family: 'GLInterstateLight';
+    }
+    header .inv{
+        border: 2px solid #ffffff;
+        background-color: #c31230;
+        padding: 1rem 1.3rem 0.8rem 1.4rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: 'GLInterstateRegular';
+        height: 3.7rem;
+        box-sizing: border-box;
+        align-self: center;
+    }
+/* Хедер */
+/* Основной контент */
+    
+    main{        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4rem; 
+        /* margin: 0 2rem;   */
+        overflow: hidden; 
+        /* border-left: 0.2rem solid gray;           */
+    }    
+    .main-pic{        
+        position: relative;   
+        margin: 3.4rem 0 7.7rem 0;
+        background-image: url(pic/main-pic.png);   
+        background-size: 126rem; 
+        width: 125.8rem; 
+        height: 32.7rem;  
+        align-self: center; 
+
+    }    
+    .main-pic2{
+        position: absolute;
+        top: 8.8rem;
+        left: 66rem;        
+        width: 47rem;
+    }
+    .main-pic-a{
+        position: absolute;
+        top: 18rem;
+        left: 85rem;
+        font-size: 2.2rem;
+        color: white;
+        font-family: 'Interstate';        
+    }        
+    .project{
+        display: flex;
+        padding: 0 5.5rem;
+        margin-bottom: 7.9rem;
+        position: relative;
+    }
+    /* .project::before{
+        content: "Проект";
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        transform: rotate(-90deg);
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 0rem;
+    } */
+    .project_h2{
+        font-family: 'Interstate';
+        font-size: 3.4rem;
+    }
+    .project_pic2{
+        display: none;
+    }
+    .project_p1{
+        font-family: "GLInterstateLight";
+        font-size: 2rem;
+        color: #363636;
+        text-transform: uppercase;
+    }
+    .project_p2{
+        font-family: "GLInterstateRegular";
+        font-size: 1.9rem;
+    }
+    .project_pic1{
+        width: 54.2rem;
+        margin-left: 5.6rem;        
+    }    
+    .project_a{
+        color: #c4122f;
+        border: 2px solid #c4122f;
+        text-decoration: underline;
+        font-family: "GLInterstateRegular";
+        font-size: 1.9rem;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+    .video-sec{
+        padding-right: 21.5rem;
+        position: relative;
+        margin-bottom: 9.6rem;
+    }
+    .tysovochka{
+        width: 92.8rem;
+        height: 53.8rem;        
+    }    
+    .video-sec_info{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 38.4rem;
+        height: 42.2rem;
+        box-sizing: border-box;
+        border: 8px solid #c41230;
+        position: absolute;
+        right: 0;
+        top: 5.8rem;
+        background-color: #ffffff;
+        padding: 3.8rem 4.9rem 5rem;
+    }
+    .video-sec_left-button,
+    .video-sec_right-button{
+        width: 4.2rem;
+        height: 4.2rem;
+        position: absolute;  
+        top: 24.8rem;
+        background-color: white;
+    }
+    .video-sec_left-button{        
+        left: -5.8rem; 
+    }
+    .video-sec_right-button{
+        transform: rotate(180deg);        
+        right: -5.7rem;        
+    }
+    .video-sec_button-ul{
+        position: absolute;
+        left: 44rem;
+        bottom: -2.7rem;
+    }
+    .video-sec_button-ul_li{
+        display: inline-block;
+        margin-right: 0.8rem;
+    }
+    .video-sec_button-ul_li_button{
+        border: 0.2rem solid #c41230;
+        border-radius: 50%;
+        width: 1.9rem;
+        height: 1.8rem;
+    }
+    .lenta{
+        display: none;
+    }
+    .participants_h2{
+        margin-left: 5.8rem;
+        font-family: "Interstate";
+        font-size: 35px;
+    }
+    .participants_pic{
+        display: flex;
+    }
+    .participants_pic img{
+        width: 32.5rem;
+        height: 43.2rem;  
+    }
+    .participants_ob{
+        position: relative;
+        margin-right: 10.1rem;
+    }
+    .participants_ob:last-child{
+        margin-right: 0;
+    }
+    .ob-info{
+        width: 25.8rem;
+        height: 20.6rem;
+        border: 8px solid #c41230;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        position: absolute;
+        top: 11.7rem;
+        right: -8.2rem;
+        font-family: "GLInterstateRegular";
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .application{
+        margin: 9.9rem 0 8.3rem 5.9rem;
+    }
+    .application_h2{
+        margin: 0 0 5.6rem 0;
+        font-size: 3.5rem;
+        font-family: 'Interstate';
+        text-transform: uppercase;        
+    }
+    .application_form{
+        display: flex;
+        border: 8px solid #c41230;
+        width: 114.2rem;
+        height: 46.4rem;  
+        font-size: 1.6rem;
+        font-family: 'GLInterstateLight';
+        padding: 5.9rem 11rem 8.2rem 10.8rem;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .application_form p{
+        margin-top: 0;
+    }
+    .form_left{
+        margin-right: 9.8rem;
+    }
+    .form_left_h3{
+        font-weight: normal;
+        font-size: 1.6rem;   
+        margin-top: 0;     
+    }
+    .form_left_h4{
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .form_right p{
+        margin-top: 0;
+    }
+    .form_right_input{
+        width: 95%;
+        margin-bottom: 2.4rem;
+        border-top: none;
+        font-size: 1.4rem;   
+        padding-left: 1em;   
+        padding-right: 1em;
+        box-sizing: border-box;  
+    }
+    .form_right_input-div{
+        position: relative;        
+    }
+    
+    .form_right_input-div::before{
+        content: "";
+        height: 0.5em;
+        width: 1em;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .form_right_input-div::after{
+        content: "";
+        height: 0.5em;
+        width: 2em;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .application_form-img{
+        position: absolute;
+        left: -1rem;
+        bottom: -1rem;  
+        width: 114.2rem;
+        height: 8.1rem;              
+    }    
+    .form_right_button{
+        font-size: 1.8rem;
+        border: 2px solid #c41230;
+        padding: 0.5rem 1rem;
+        font-family: 'GLInterstateRegular';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form_right_button_play-button{
+        margin-left: 0.5em;
+        width: 1.7rem;
+        height: 1.6rem;
+    }
+    .stages{
+        margin: 0 0 10.1rem 5.6rem;
+    }
+    .stages_h2{
+        margin: 0 0 6rem 0;
+        font-size: 3.5rem;
+        font-family: 'Interstate';
+    }    
+    .stages ol{
+        display: flex;
+        padding: 0;
+    }        
+    .stages_ol li{
+        font-family: 'GLInterstateRegular';
+        font-size: 2rem;
+        display: inline-block;
+    }
+    .stages_ol h3::after{
+        content: "";
+        display: inline-block;
+        width: 11.5rem;
+        height: 2.7rem;
+        background-image: url(pic/stages_img1.png);
+        background-size: 12rem;
+        margin: 0 2.3rem 0 1.5rem;
+        position: relative;
+        top: 0.5rem;
+    }
+    .teachers{
+        margin: 0 0 29.9rem 5.6rem;
+        position: relative;
+    }
+    .teachers_h2{
+        margin: 0 0 5rem 0;
+        font-size: 3.5rem;
+        font-family: 'Interstate';
+    }
+    .teachers_ul{
+        display: flex;
+    }
+    .teachers_ul li{
+        margin-right: 3rem;
+        display: inline-block;
+        position: relative;
+    }
+    .teachers_ul li:last-child{
+        margin-right: 0;
+    }
+    .teachers_ul li img{
+        width: 26rem;
+        height: 36.5rem;
+    }
+    .teacher-dis{
+        position: absolute;
+        top: 25.8rem;
+        left: 2.3rem;
+        width: 25.4rem;
+        height: 26.2rem;
+        border: 0.8rem solid #c41230;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        padding: 4.2rem 2.8rem 0 3.1rem;
+        display: flex;
+        flex-direction: column;                  
+        font-size: 1.4rem;  
+        font-family: 'GLInterstateRegular';  
+        text-align: center;            
+    }
+    .teacher-dis h3{
+        font-family: 'Interstate';
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        margin: 0;
+        
+    }
+    .teacher-dis_p{
+        font-family: 'GLInterstateRegular';        
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .teachers_teacher-1{
+        background-image: url(pic/teacher-dis-img1.png);
+        background-repeat: no-repeat; 
+        background-size: 27rem;    
+        background-position: -2rem 19rem;   
+    }
+    .teachers_teacher-2{
+        background-image: url(pic/teacher-dis-img2.png);
+        background-repeat: no-repeat; 
+        background-size: 27rem;    
+        background-position: -2rem 21rem;   
+    }
+    .teachers_left-button,
+    .teachers_right-button{
+        width: 4.2rem;
+        height: 4.2rem;
+        position: absolute;
+        top: 34rem;
+        background-color: white;
+    }
+    .teachers_left-button{
+        left: -5.8rem;
+    }
+    .teachers_right-button{
+        transform: rotate(180deg);
+        right: -7.3rem;
+    }
+    .teachers_button-ul{
+        position: absolute;
+        left: 54.4rem;
+        bottom: -19rem;
+    }
+    .teachers_button-ul_li{
+        display: inline-block;
+        margin-right: 0.8rem;
+    }
+    .teachers_button-ul_li_button{
+        border: 0.2rem solid #c41230;
+        border-radius: 50%;
+        width: 1.9rem;
+        height: 1.8rem;
+    }
+    .stages_2{
+        display: none;        
+    }
+    .education{
+        margin: 0 0 6.3rem 5.8rem;
+        display: flex;                
+    }    
+    .education_pic-1{
+        width: 54.2rem;
+        height: 57.6rem;
+        margin-right: 5.9rem;
+    }
+    .education_h2{
+        margin: 0 0 9.8rem 0;
+        font-size: 3.5rem;
+        font-family: 'Interstate';
+    }
+    .education_p{
+        font-family: 'GLInterstateRegular';
+        font-size: 2rem;
+    }
+/* Основной контент */
+
+/* Футер */
+    footer{
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        height: 35rem;
+        padding-top: 9.9rem;        
+        font-family: 'GLInterstateLight';
+        text-decoration: underline;
+        font-size: 1.7rem;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }    
+    .footer_ob1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-right: 13.9rem;
+    }
+    .footer_levis-pic{
+        width: 12.5rem;
+        height: 5.1rem;
+        margin-right: 6.5rem;        
+    }
+    .footer_ul{
+        padding-top: 1rem;
+        margin-right: 9.6rem;
+        display: flex;
+    }
+    .footer_ul li{
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    .footer_ul_img{
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+    .footer_mms-pic{
+        position: absolute;
+        top: -1.7rem;
+        right: -7.8rem;
+        width: 13.9rem;
+        height: 9rem;
+    }
+    .footer_ob2{
+        display: flex;
+        flex-direction: column;
+        margin-right: 7.6rem;
+    }
+    .footer_ob3{        
+        font-size: 1.5rem;
+    }
+    .footer_ob4{
+        display: flex;
+    }
+    .footer_dec-pic{
+        position: absolute;
+        top: 20rem;
+        left: 2.2rem;
+    }
+/* Футер */
+
+

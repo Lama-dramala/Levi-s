@@ -1,0 +1,314 @@
+@import url("Levi\'s.css");
+@media (max-width: 1400px) {    
+    html{
+        font-size: 0.7vw;
+    }   
+}
+@media (max-width: 800px) {
+    html{        
+        font-size: 1.25vw;
+    }
+    .mobile-hidden{
+        display: none;
+    }      
+    #mobile-hidden_1{
+        display: none;
+    } 
+    #mobile-hidden_2{
+        display: none;
+    } 
+    .pc-hidden{
+        display: unset;
+    }
+    /* Хедер */        
+        header nav{
+            display: none;
+        }   
+        .nav-menu{
+            display: inline-block;
+            margin-right: 7.7rem;
+            width: 5.6rem;
+            height: 4.4rem;
+        } 
+        .main-logo{
+            margin-right: 7.7rem;
+            width: 23rem;
+            height: 4.5rem;
+        }
+        header{
+            padding: 3.1rem 4.8rem 5.8rem 4.8rem;            
+        }
+    /* Хедер */
+    /* Основной контент */
+        main{
+            padding-left: 4.9rem;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+        .main-pic{  
+            margin: 0 0 5rem 0; 
+            background-position: -35rem;  
+            background-size: 136rem;  
+            width: 100%;
+            align-self: unset;
+        }        
+        .main-pic2{            
+            width: 40.1rem;
+            left: 35rem;
+        }
+        .main-pic-a{
+            font-size: 2.4rem;
+            left: 51.5rem;
+        }
+        .project{
+            padding: 0;
+        }
+        .project_h2{
+            margin-top: 0;
+        }
+        .project_pic1{
+            display: none;
+        }
+        .project_pic2{
+            display: block;
+            width: 67.1rem;
+        }
+        .video-sec{
+            position: relative;
+            padding-right: 0;
+            margin-bottom: 51.7rem;
+        }
+        .tysovochka{
+            width: 67.2rem;
+            height: 39rem;
+        }
+        .video-sec_info{
+            right: 10.6rem;
+            top: 28.9rem;
+            width: 45.9rem;
+            height: 42.2rem;
+            
+        }
+        .video-sec_info::before{
+            content: "";
+            display: block;
+            width: 123.7rem;
+            height: 158.9rem;
+            position: absolute;
+            left: -23.4rem;
+            top: -35rem;
+            background-image: url(pic/lenta.png);
+            z-index: -1;
+        }
+        .video-sec_info::after{
+            content: "";
+            display: block;
+            width: 123.7rem;
+            height: 158.9rem;
+            position: absolute;
+            left: -23.4rem;
+            top: -41rem;
+            background-image: url(pic/lenta.png);
+            transform: rotate(-13deg);
+            z-index: -1;
+        }  
+        .video-sec_left-button,
+        .video-sec_right-button{
+            top: 17.4rem;
+        }
+        .video-sec_left-button{            
+            left: -2rem; 
+        }
+        .video-sec_right-button{  
+            right: 0.9rem;        
+        } 
+        .video-sec_button-ul{            
+            left: 33.9rem;
+            bottom: -37.2rem;
+        }     
+        .participants_h2{
+            margin-left: 0;
+        }
+        .participants_pic{
+            display: flex;
+            flex-direction: column;
+        }
+        .participants_ob{
+            width: 32.5rem;           
+        }
+        .ob-info{
+            width: 28.6rem;
+            height: 26.3rem;
+            border: 8px solid #c41230;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            position: absolute;
+            top: 8.5rem;
+            right: -24.9rem;
+            font-family: "GLInterstateRegular";
+            font-size: 2.0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .application{
+            margin: 9.5rem 0 12.2rem 0;
+        }
+        .application_form{
+            display: flex;
+            flex-direction: column;
+            border: 8px solid #c41230;
+            width: 72.1rem;
+            height: unset;            
+            font-size: 2.5rem;
+            font-family: 'Interstate';
+            padding: 3.2rem 3.8rem 13.5rem 4.1rem;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            margin-left: -2rem;
+        }
+        .form_left{
+            margin-right: unset;
+        }
+        .stages{
+            display: none;
+        }
+        .teachers{
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        .teachers_ul{
+            margin-left: 5.3rem;
+        }
+        .teachers_left-button{
+            left: -0.2rem;
+        }
+        .teachers_right-button{            
+            right: -4.3rem;
+        }
+        .teachers_button-ul{            
+            left: 28.4rem;            
+        }
+        .stages_2{
+            margin: 39.6rem 0 8.2rem;
+            display: unset;
+        }
+        .stages_2_h2{
+            margin: 0 0 6.7rem 0;
+            font-size: 3.5rem;
+            font-family: 'Interstate';
+        }
+        .stages_2_ol{            
+            margin-left: 6.1rem;
+            padding: 0;
+            display: flex;
+            flex-direction: column;            
+        }        
+        .stages_2_ol li{
+            font-family: 'GLInterstateRegular';
+            font-size: 2.8rem;
+            display: inline-block;
+            position: relative;
+            padding-left: 1.6rem;
+            background-color: white;
+        }    
+        .stages_2_ol_div{
+            display: flex;
+            
+        }    
+        .stages_2_ol_li-1{
+            margin-right: 20.8rem;
+        }       
+        .stages_2_ol_li-3{
+            margin-right: 17.2rem;
+        } 
+        .stages_2_ol_li-3::before{
+            content: "";
+            height: 2.7rem;
+            width: 25rem;
+            background-image: url(pic/stages_img1.png);            
+            z-index: -1;
+            display: inline-block;
+            position: absolute;
+            top: 7.3rem;
+            left: -11.7rem;
+            background-size: 12rem;
+        }    
+        .stages_2_ol_li-5::before{
+            content: "";
+            height: 2.7rem;
+            width: 25rem;
+            background-image: url(pic/stages_img1.png);            
+            z-index: -1;
+            display: inline-block;
+            position: absolute;
+            top: 7.3rem;
+            left: -11.7rem;
+            background-size: 12rem;
+        }   
+        .stages_2_ol_div h3:after{
+            content: "";
+            height: 2.7rem;
+            width: 50rem;
+            background-image: url(pic/stages_img1.png);            
+            z-index: -1;
+            display: inline-block;
+            position: absolute;
+            top: 7.3rem;
+            left: 5rem;
+            background-size: 12rem;
+        }
+        .education{
+            margin: 0 0 16.4rem 0;
+            display: flex;                            
+        }  
+        .education_h2{
+            margin: 0 0 4.5rem 0;
+            font-size: 3.5rem;
+            font-family: 'Interstate';
+        }
+        .education_pic-2{
+            width: 67.1rem;
+            height: 24rem;
+            margin-bottom: 3rem;
+        }
+        .education_p{
+            font-family: 'GLInterstateRegular';
+            font-size: 2.3rem;
+        }
+    /* основной контент */
+
+    /* Футер */
+        footer{
+            padding-top: 6.2rem;
+        }
+        .footer_levis-pic{
+            width: 14.4rem;
+            height: 5.9rem;
+            margin-right: 6.5rem;                    
+        }
+        .footer_ob1{
+            position: relative;
+            display: flex;
+            justify-content: unset;
+            flex-direction: column;    
+            padding: 0;                   
+        }
+        .footer_ul{
+            padding-top: 1rem;
+            margin-right: unset;
+        }
+        .footer_ob4:first-child{
+            margin-bottom: 7.9rem;
+        }
+        .footer_mms-pic{
+            position: absolute;
+            top: 0rem;
+            right: -3rem;
+            width: 9.4rem;
+            height: 6.1rem;
+        }
+    /* Футер */
+}   
+
