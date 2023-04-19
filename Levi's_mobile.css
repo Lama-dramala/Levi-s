@@ -1,4 +1,4 @@
-@import url("Levi\'s.css");
+@import url("Levi's.css");
 @media (max-width: 1400px) {    
     html{
         font-size: 0.7vw;
@@ -154,7 +154,7 @@
         .application{
             margin: 9.5rem 0 12.2rem 0;
         }
-        .application_form{
+        .application_form_container{
             display: flex;
             flex-direction: column;
             border: 8px solid #c41230;
@@ -282,11 +282,13 @@
     /* Футер */
         footer{
             padding-top: 6.2rem;
+        }        
+        .footer_levis-pic_a{
+            margin-right: 6.5rem;  
         }
         .footer_levis-pic{
             width: 14.4rem;
-            height: 5.9rem;
-            margin-right: 6.5rem;                    
+            height: 5.9rem;                 
         }
         .footer_ob1{
             position: relative;

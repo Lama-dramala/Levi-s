@@ -8,27 +8,43 @@
     </head>
     <body>
         <header>
-            <img src="pic/main-logo.png" alt="main-logo" class="main-logo">
+            <a href="#" class="main-logo-link">
+                <img src="pic/main-logo.png" alt="main-logo" class="main-logo">
+            </a>
             <nav>
                 <ul>
-                    <li>Проект</li>
-                    <li>Видео</li>
-                    <li>Для кого</li>
-                    <li>Заявка</li>
-                    <li>Этапы</li>
-                    <li>Преподаватели</li>
-                    <li>Обучение</li>
+                    <li>
+                        <a href="#project">Проект</a>
+                    </li>
+                    <li>
+                        <a href="#video-sec">Видео</a>
+                    </li>
+                    <li>
+                        <a href="#participants">Для кого</a>
+                    </li>
+                    <li>
+                        <a href="#application">Заявка</a>
+                    </li>
+                    <li>
+                        <a href="#stages">Этапы</a>
+                    </li>
+                    <li>
+                        <a href="#teachers">Преподаватели</a>
+                    </li>
+                    <li>
+                        <a href="#education">Обучение</a>
+                    </li>
                 </ul>                
             </nav>
             <img src="pic/nav-menu.png" alt="menu" class="nav-menu">
-            <a href="#" class="inv">Подать заявку</a>
+            <a href="#application" class="inv">Подать заявку</a>
         </header> 
         <div class="main-pic">                
             <img src="pic/main-pic2.png" alt="Основной логотип" class="main-pic2">
-            <a href="#" class="main-pic-a">Посмотрите видео</a>
+            <a href="#video-sec" class="main-pic-a">Посмотрите видео</a>
         </div>         
         <main>     
-            <div class="project">
+            <div class="project" id="project">
                 <div>
                     <h2 class="project_h2">LEVI'S® MUSIC PROJECT — <br class="mobile-hidden">
                         это музыкальное <br class="mobile-hidden">
@@ -56,31 +72,17 @@
                         обучения. Не упусти свой шанс присоединиться <br class="mobile-hidden">
                         к Levi's® Music Project! 
                     </p>
-                    <a href="#" class="project_a"> Подай заявку на участие прямо сейчас!</a>
+                    <a href="#application" class="project_a"> Подай заявку на участие прямо сейчас!</a>
                 </div>
                 <img src="pic/project-pic.png" alt="" class="project_pic1">
             </div>  
-            <div class="video-sec">
+            <div id="video-sec" class="video-sec">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bMigrqjVE7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tysovochka"></iframe>
                 <div class="video-sec_info">
                     <img src="pic/video-sec_info-pic.png" alt="Касательно сотрудничества levi's и Noize MC">
                 </div>
-                <!-- <button>
-                    <img src="pic/video-sec_r-l-button.png" alt="Предыдущее видео" class="video-sec_left-button">
-                </button>
-                <button>
-                    <img src="pic/video-sec_r-l-button.png" alt="Следующие видео" class="video-sec_right-button">
-                </button> -->
-                <!-- <ul class="video-sec_button-ul">
-                    <li class="video-sec_button-ul_li">
-                        <button class="video-sec_button-ul_li_button"></button>
-                    </li>
-                    <li class="video-sec_button-ul_li">
-                        <button class="video-sec_button-ul_li_button"></button>
-                    </li>
-                </ul> -->
             </div>                 
-            <div class="participants">
+            <div id="participants" class="participants">
                 <h2 class="participants_h2">КТО МОЖЕТ УЧАСТВОВАТЬ?</h2>
                 <div class="participants_pic">
                     <div class="participants_ob">
@@ -105,11 +107,11 @@
                     </div> 
                 </div>
             </div>
-            <div class="application">
+            <div id="application" class="application">
                 <h2 class="application_h2">заполни заявку, <br>
                     чтобы принять участие
                 </h2>
-                <form action="#" method="get" class="application_form">
+                <div class="application_form_container">
                     <div class="form_left">
                         <h3 class="form_left_h3">
                             Для подачи заявки на участие необходимо <br>
@@ -142,24 +144,26 @@
                             хранилище или видеохостинг и вставить в поля <br>
                             активную ссылку на просмотр/прослушивание.
                         </p>
-                        <div class="form_right_input-div">
-                            <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
-                        </div>
-                        <div class="form_right_input-div">
-                            <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
-                        </div>
-                        <div class="form_right_input-div">
-                            <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
-                        </div>
-                        <button class="form_right_button">
-                            Заполнить анкету
-                            <img src="pic/play-button.png" alt="" class="form_right_button_play-button">
-                        </button>    
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="https://youtube.com/example" class="form_right_input">
+                            </div>
+                            <button class="form_right_button">
+                                Заполнить анкету
+                                <img src="pic/play-button.png" alt="" class="form_right_button_play-button">
+                            </button>
+                        </form>    
                     </div>  
                     <img src="pic/application_form-img.png" alt="" class="application_form-img">                                                                  
-                </form>
+                </div>
             </div>
-            <div class="stages">
+            <div id="stages" class="stages">
                 <h2 class="stages_h2">ЭТАПЫ КОНКУРСА</h2>
                 <ol class="stages_ol">
                     <li>
@@ -202,7 +206,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="teachers">
+            <div id="teachers" class="teachers">
                 <h2 class="teachers_h2">ПРЕПОДАВАТЕЛИ</h2>
                 <ul class="teachers_ul">
                     <li>
@@ -274,26 +278,6 @@
                         </div>
                     </li>
                 </ul>
-                <!-- <button>
-                    <img src="pic/video-sec_r-l-button.png" alt="Предыдущие преподаватели" class="teachers_left-button">
-                </button>
-                <button>
-                    <img src="pic/video-sec_r-l-button.png" alt="Следующие преподаватели" class="teachers_right-button">
-                </button>
-                <ul class="teachers_button-ul">
-                    <li class="teachers_button-ul_li">
-                        <button class="teachers_button-ul_li_button"></button>
-                    </li>
-                    <li class="teachers_button-ul_li">
-                        <button class="teachers_button-ul_li_button"></button>
-                    </li>
-                    <li class="teachers_button-ul_li">
-                        <button class="teachers_button-ul_li_button pc-hidden"></button>
-                    </li>
-                    <li class="teachers_button-ul_li">
-                        <button class="teachers_button-ul_li_button pc-hidden"></button>
-                    </li>
-                </ul> -->
             </div>
             <div class="stages_2">
                 <h2 class="stages_2_h2">ЭТАПЫ КОНКУРСА</h2>
@@ -342,7 +326,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="education">
+            <div id="education" class="education">
                 <img src="pic/education-pic.png" alt="" class="education_pic-1 mobile-hidden">
                 <div>
                     <h2 class="education_h2">
@@ -372,22 +356,24 @@
         <footer>
             <div class="footer_ob1">
                 <div class="footer_ob4">
-                    <a href="#">
-                        <img src="pic/footer_levis-pic.png" alt="официальный сайт Левис" class="footer_levis-pic">
-                    </a>
+                    <div>
+                        <a href="#" class="footer_levis-pic_a">
+                            <img src="pic/footer_levis-pic.png" alt="официальный сайт Левис" class="footer_levis-pic">
+                        </a>
+                    </div>
                     <ul class="footer_ul">
                         <li>
-                            <a>
+                            <a href="#">
                                 <img src="pic/footer_vk-pic.png" alt="Levis music project в вк" class="footer_ul_img">
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href="#">
                                 <img src="pic/footer_facebook-pic.png" alt="Levis music project в facebook" class="footer_ul_img">
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href="#">
                                 <img src="pic//footer_instagram-pic.png" alt="Levis music project в инстаграме" class="footer_ul_img">
                             </a>
                         </li>

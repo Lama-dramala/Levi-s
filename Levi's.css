@@ -1,5 +1,6 @@
 html{
-    font-size: 10px;    
+    font-size: 10px;
+    scroll-behavior: smooth;    
 }
 @font-face {
     font-family: 'GLInterstateLight';
@@ -62,8 +63,10 @@ ul{
         padding: 2.8rem 0;
         text-transform: uppercase;     
     }
-    .main-logo{
+    .main-logo-link{
         margin-right: 9.1rem;
+    }
+    .main-logo{        
         width: 19.5rem;
         height: 3.8rem;
     }
@@ -279,7 +282,7 @@ ul{
         font-family: 'Interstate';
         text-transform: uppercase;        
     }
-    .application_form{
+    .application_form_container{
         display: flex;
         border: 8px solid #c41230;
         width: 114.2rem;
@@ -291,7 +294,7 @@ ul{
         position: relative;
         overflow: hidden;
     }
-    .application_form p{
+    .application_form_container p{
         margin-top: 0;
     }
     .form_left{
@@ -317,28 +320,6 @@ ul{
         padding-left: 1em;   
         padding-right: 1em;
         box-sizing: border-box;  
-    }
-    .form_right_input-div{
-        position: relative;        
-    }
-    
-    .form_right_input-div::before{
-        content: "";
-        height: 0.5em;
-        width: 1em;
-        background-color: white;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .form_right_input-div::after{
-        content: "";
-        height: 0.5em;
-        width: 2em;
-        background-color: white;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
     .application_form-img{
         position: absolute;
@@ -429,6 +410,18 @@ ul{
         font-family: 'GLInterstateRegular';  
         text-align: center;            
     }
+    .teachers_ul li:nth-child(odd) .teacher-dis{
+        background-image: url(pic/teacher-dis-img1.png);
+        background-repeat: no-repeat; 
+        background-size: 27rem;    
+        background-position: -2rem 19rem;
+    }
+    .teachers_ul li:nth-child(even) .teacher-dis{
+        background-image: url(pic/teacher-dis-img2.png);
+        background-repeat: no-repeat; 
+        background-size: 27rem;    
+        background-position: -2rem 21rem;
+    }
     .teacher-dis h3{
         font-family: 'Interstate';
         font-size: 1.9rem;
@@ -441,18 +434,6 @@ ul{
         font-size: 1.6rem;
         text-transform: uppercase;
         margin-bottom: 0;
-    }
-    .teachers_teacher-1{
-        background-image: url(pic/teacher-dis-img1.png);
-        background-repeat: no-repeat; 
-        background-size: 27rem;    
-        background-position: -2rem 19rem;   
-    }
-    .teachers_teacher-2{
-        background-image: url(pic/teacher-dis-img2.png);
-        background-repeat: no-repeat; 
-        background-size: 27rem;    
-        background-position: -2rem 21rem;   
     }
     .teachers_left-button,
     .teachers_right-button{
@@ -527,10 +508,12 @@ ul{
         justify-content: center;
         padding-right: 13.9rem;
     }
+    .footer_levis-pic_a{
+        margin-right: 6.5rem;  
+    }
     .footer_levis-pic{
         width: 12.5rem;
-        height: 5.1rem;
-        margin-right: 6.5rem;        
+        height: 5.1rem;      
     }
     .footer_ul{
         padding-top: 1rem;
