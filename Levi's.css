@@ -39,6 +39,9 @@ a{
     color: unset;
     text-decoration: unset;
 }
+a:hover{
+    text-decoration: underline;
+}
 button{
     background-color: unset;
     border: unset;
