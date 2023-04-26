@@ -38,6 +38,11 @@
         header{
             padding: 3.1rem 4.8rem 5.8rem 4.8rem;            
         }
+        header .inv{
+                text-align: center;
+                height: auto;
+                font-size: 1.2rem;
+        }
     /* Хедер */
     /* Основной контент */
         main{
